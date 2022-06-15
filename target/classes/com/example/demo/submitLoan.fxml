@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="640.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoanController">
+   <children>
+      <Accordion layoutX="52.0" layoutY="111.0" />
+      <Label layoutX="101.0" layoutY="196.0" text="Checking Your Eligibility...">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="236.0" layoutX="165.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/calculating_eligibility.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="loadingStatus" alignment="CENTER" layoutX="2.0" layoutY="333.0" prefHeight="16.0" prefWidth="473.0" text="Analyzing your data now...">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

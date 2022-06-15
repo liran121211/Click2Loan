@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="640.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoanController">
+   <children>
+      <Accordion layoutX="52.0" layoutY="111.0" />
+      <Label layoutX="162.0" layoutY="36.0" opacity="0.55" text="Documents" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button fx:id="nextBtn" defaultButton="true" layoutX="349.0" layoutY="603.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Next">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" defaultButton="true" layoutX="19.0" layoutY="603.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Back">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="9.0" layoutY="90.0" prefHeight="435.0" prefWidth="453.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="148.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="0.0" prefWidth="92.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="143.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="92.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ToggleButton fx:id="doc_btn_10" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" />
+            <ToggleButton fx:id="doc_btn_0" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" />
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="159.0" text="Passport Photo: " textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="167.0" text="Residence Proof: " textAlignment="CENTER" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="156.0" text="Bank Account Statement: " textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="171.0" text="Property Detailes: " textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="172.0" text="Liabilities Statement: " textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="175.0" text="Salary Certificate: " textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="181.0" text="Form 16/IT Returns: " textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="180.0" text="IT Returns/Assessment: " textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="157.0" text="Property Cost Estimate: " textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="159.0" text="NRO Bank Statement: " textAlignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="166.0" text="NRI Bank Statement: " textAlignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="172.0" text="Proof of Employment: " textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="163.0" text="PAN Card: " textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="183.0" text="Electricity Bill: " textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="160.0" text="Employment Letter: " textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="167.0" text="Birth Certificate: " textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="156.0" text="Letter From Society: " textAlignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="155.0" text="Letter From Builder: " textAlignment="CENTER" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="163.0" text="Letter From Housing: " textAlignment="CENTER" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="161.0" text="Signature Identification: " textAlignment="CENTER" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <ToggleButton fx:id="doc_btn_1" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="doc_btn_2" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="doc_btn_3" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="doc_btn_4" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="doc_btn_5" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="doc_btn_6" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="doc_btn_7" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="doc_btn_8" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="doc_btn_9" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <ToggleButton fx:id="doc_btn_11" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="doc_btn_12" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="doc_btn_13" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ToggleButton fx:id="doc_btn_14" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <ToggleButton fx:id="doc_btn_15" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <ToggleButton fx:id="doc_btn_16" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <ToggleButton fx:id="doc_btn_17" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <ToggleButton fx:id="doc_btn_18" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <ToggleButton fx:id="doc_btn_19" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Upload" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <Separator layoutX="157.0" layoutY="68.0" prefHeight="0.0" prefWidth="163.0" />
+   </children>
+</Pane>

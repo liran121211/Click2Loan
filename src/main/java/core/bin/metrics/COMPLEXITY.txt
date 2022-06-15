@@ -1,0 +1,148 @@
+LEGEND:
+- OCavg: Average operation complexity
+- OCmax: Maximum operation complexity
+- OCmax: Weighted operation complexity
+- v(G)avg: Average cyclomatic complexity
+- v(G)tot: Total cyclomatic complexity 
+
++---------------------------------------------------------------------+-------+-------+-----+
+|                                Class                                | OCavg | OCmax | WMC |
++---------------------------------------------------------------------+-------+-------+-----+
+|                   com.example.demo.AboutController                  |  1.1  |   2   |  11 |
+|                    com.example.demo.AboutManager                    |  1.75 |   4   |  7  |
+|                  com.example.demo.AboutManagerTest                  |  1.0  |   1   |  3  |
+|                com.example.demo.BankerPanelController               |  1.27 |   4   |  28 |
+|                 com.example.demo.BankerPanelManager                 |  2.36 |   9   |  26 |
+|               com.example.demo.BankerPanelManagerTest               |  1.0  |   1   |  3  |
+|                com.example.demo.ClientLoansController               |  1.36 |   4   |  15 |
+|                 com.example.demo.ClientLoansManager                 |  1.25 |   3   |  10 |
+|                    com.example.demo.ClientsModel                    |  1.0  |   1   |  11 |
+|                 com.example.demo.ComplaintController                |  1.14 |   2   |  8  |
+|                  com.example.demo.ComplaintManager                  |  1.0  |   1   |  6  |
+|                com.example.demo.ComplaintManagerTest                |  1.0  |   1   |  4  |
+|                com.example.demo.EditProfileController               |  1.11 |   2   |  10 |
+|                 com.example.demo.EditProfileManager                 |  2.17 |   4   |  13 |
+|               com.example.demo.EditProfileManagerTest               |  2.0  |   5   |  8  |
+|                  com.example.demo.FLAG_DOCUMENT_10                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_11                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_12                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_13                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_14                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_15                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_16                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_17                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_18                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_19                  |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_DOCUMENT_2                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_20                  |  1.0  |   1   |  3  |
+|                  com.example.demo.FLAG_DOCUMENT_21                  |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_DOCUMENT_3                  |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_DOCUMENT_4                  |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_DOCUMENT_5                  |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_DOCUMENT_6                  |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_DOCUMENT_7                  |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_DOCUMENT_8                  |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_DOCUMENT_9                  |  1.0  |   1   |  3  |
+|                     com.example.demo.FLAG_EMAIL                     |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_EMP_PHONE                   |  1.0  |   1   |  3  |
+|                     com.example.demo.FLAG_MOBIL                     |  1.0  |   1   |  3  |
+|                    com.example.demo.FLAG_OWN_CAR                    |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_OWN_REALTY                  |  1.0  |   1   |  3  |
+|                     com.example.demo.FLAG_PHONE                     |  1.0  |   1   |  3  |
+|                   com.example.demo.FLAG_WORK_PHONE                  |  1.0  |   1   |  3  |
+|              com.example.demo.ForgotPasswordController              |  1.67 |   3   |  5  |
+|                com.example.demo.ForgotPasswordManager               |  1.83 |   5   |  11 |
+|                     com.example.demo.FormAdapter                    |  4.34 |   36  | 165 |
+|                       com.example.demo.GENDER                       |  1.0  |   1   |  3  |
+|                com.example.demo.InspectLoanController               |  13.0 |   25  |  26 |
+|                 com.example.demo.InspectLoanManager                 |  1.75 |   4   |  7  |
+|                      com.example.demo.Launcher                      |  1.0  |   1   |  1  |
+|                       com.example.demo.LoanApp                      |  4.0  |   13  |  16 |
+|                   com.example.demo.LoanController                   |  1.31 |   26  | 136 |
+|                     com.example.demo.LoanManager                    |  6.06 |   51  | 109 |
+|                   com.example.demo.LoanManagerTest                  |  1.0  |   1   |  3  |
+|                com.example.demo.LoansGraphController                |  1.71 |   5   |  12 |
+|                  com.example.demo.LoansGraphManager                 |  1.5  |   3   |  6  |
+|                     com.example.demo.LoansModel                     |  1.0  |   1   |  15 |
+|                com.example.demo.LogOutViewController                |  1.0  |   1   |  1  |
+|                   com.example.demo.LoginController                  |  1.57 |   3   |  11 |
+|                    com.example.demo.LoginManager                    |  1.44 |   5   |  13 |
+|                  com.example.demo.LoginManagerTest                  |  1.0  |   1   |  4  |
+|                com.example.demo.ManageUsersController               |  1.67 |   5   |  10 |
+|                 com.example.demo.ManageUsersManager                 |  3.1  |   9   |  31 |
+|               com.example.demo.ManageUsersManagerTest               |  1.0  |   1   |  4  |
+|               com.example.demo.ManagerPanelController               |  2.8  |   5   |  14 |
+|                 com.example.demo.ManagerPanelManager                |  1.25 |   3   |  10 |
+|                    com.example.demo.MessageModel                    |  1.0  |   1   |  8  |
+|               com.example.demo.MessagesPanelController              |  1.75 |   3   |  7  |
+|                com.example.demo.MessagesPanelManager                |  1.6  |   4   |  16 |
+|              com.example.demo.MessagesPanelManagerTest              |  1.0  |   1   |  6  |
+|                       com.example.demo.Metrics                      |  1.33 |   2   |  4  |
+|               com.example.demo.ModifyAccountController              |  1.0  |   1   |  4  |
+|                com.example.demo.ModifyAccountManager                |  2.0  |   4   |  12 |
+|                com.example.demo.ModifyUserController                |  2.0  |   5   |  8  |
+|                  com.example.demo.ModifyUserManager                 |  3.33 |   9   |  30 |
+|                 com.example.demo.NAME_EDUCATION_TYPE                |  1.0  |   1   |  3  |
+|                 com.example.demo.NAME_FAMILY_STATUS                 |  1.0  |   1   |  3  |
+|                  com.example.demo.NAME_HOUSING_TYPE                 |  1.0  |   1   |  3  |
+|                   com.example.demo.OCCUPATION_TYPE                  |  1.0  |   1   |  3  |
+|                  com.example.demo.ORGANIZATION_TYPE                 |  1.0  |   1   |  3  |
+|                     com.example.demo.PostgreSQL                     |  1.88 |   4   |  32 |
+|                com.example.demo.REGION_RATING_CLIENT                |  1.0  |   1   |  3  |
+|                 com.example.demo.RegisterController                 |  1.0  |   1   |  1  |
+|                   com.example.demo.RegisterManager                  |  2.86 |   9   |  20 |
+|               com.example.demo.ReplyMessageController               |  3.0  |   3   |  3  |
+|                 com.example.demo.ReplyMessageManager                |  1.29 |   3   |  9  |
+|                 com.example.demo.RequestNewLoanTest                 |  1.0  |   1   |  3  |
+|                com.example.demo.SendMessageController               |  1.29 |   2   |  9  |
+|                 com.example.demo.SendMessageManager                 |  1.0  |   1   |  6  |
+|               com.example.demo.SendMessageManagerTest               |  1.0  |   1   |  4  |
+|                   com.example.demo.ThreadWorker_1                   |  1.4  |   2   |  7  |
+|                   com.example.demo.ThreadWorker_2                   |  1.2  |   2   |  6  |
+|                   com.example.demo.ThreadWorker_3                   |  1.6  |   3   |  8  |
+|                 com.example.demo.TodoListController                 |  1.43 |   3   |  10 |
+|                   com.example.demo.TodoListManager                  |  2.29 |   7   |  16 |
+|                 com.example.demo.TodoListManagerTest                |  1.0  |   1   |  6  |
+|                    com.example.demo.TodoListModel                   |  1.0  |   1   |  9  |
+|                 com.example.demo.UserPanelController                |  1.6  |   4   |  8  |
+|                  com.example.demo.UserPanelManager                  |  1.2  |   2   |  12 |
+|                 com.example.demo.ViewLoansController                |  1.18 |   3   |  13 |
+|                  com.example.demo.ViewLoansManager                  |  1.57 |   5   |  11 |
+|                com.example.demo.ViewMessageController               |  3.0  |   3   |  3  |
+|                 com.example.demo.ViewMessageManager                 |  1.33 |   3   |  8  |
+|                  com.example.demo.WelcomeController                 |  1.0  |   1   |  2  |
+|                   com.example.demo.WelcomeManager                   |  1.2  |   2   |  6  |
+|                 com.example.demo.WithdrawController                 |  1.0  |   1   |  7  |
+|                   com.example.demo.WithdrawManager                  |  1.2  |   2   |  6  |
+|                 com.example.demo.WithdrawManagerTest                |  1.0  |   1   |  3  |
+|                 core.ann.classifier.Activation_ReLU                 |  1.83 |   4   |  11 |
+|                core.ann.classifier.Activation_Sigmoid               |  1.29 |   3   |  9  |
+|    core.ann.classifier.Activation_Sigmoid_Loss_BinaryCrossEntropy   |  1.5  |   5   |  12 |
+|                core.ann.classifier.Activation_SoftMax               |  1.33 |   3   |  8  |
+| core.ann.classifier.Activation_Softmax_Loss_CategoricalCrossEntropy |  1.75 |   5   |  14 |
+|                     core.ann.classifier.Dataset                     |  2.67 |   11  |  16 |
+|              core.ann.classifier.InvalidMatrixArgument              |  1.0  |   1   |  4  |
+|                core.ann.classifier.InvalidMatrixAxis                |  1.0  |   1   |  1  |
+|              core.ann.classifier.InvalidMatrixDimension             |  1.0  |   1   |  3  |
+|              core.ann.classifier.InvalidMatrixOperation             |  1.0  |   1   |  1  |
+|                    core.ann.classifier.LayerDense                   |  1.43 |   11  |  40 |
+|                   core.ann.classifier.LayerDropout                  |  1.0  |   1   |  5  |
+|             core.ann.classifier.Loss_BinaryCrossEntropy             |  1.8  |   5   |  9  |
+|           core.ann.classifier.Loss_CategoricalCrossEntropy          |  2.8  |   5   |  14 |
+|                      core.ann.classifier.Matrix                     |  4.5  |   10  | 234 |
+|              core.ann.classifier.MatrixExceptionHandler             |  1.0  |   1   |  2  |
+|             core.ann.classifier.MatrixIndexesOutOfBounds            |  1.0  |   1   |  2  |
+|                  core.ann.classifier.NeuralNetwork                  |  2.95 |   19  |  65 |
+|                core.ann.classifier.Optimizer_Adagrad                |  1.25 |   2   |  10 |
+|                  core.ann.classifier.Optimizer_Adam                 |  1.22 |   2   |  11 |
+|                core.ann.classifier.Optimizer_RMSprop                |  1.22 |   2   |  11 |
+|                  core.ann.classifier.Optimizer_SGD                  |  1.33 |   3   |  12 |
+|                              core.init                              |  1.0  |   1   |  1  |
+|                core.python.extender.PythonInterpreter               |  2.0  |   3   |  4  |
++---------------------------------------------------------------------+-------+-------+-----+
+
++---------+---------+---------+
+| Project | v(G)avg | v(G)tot |
++---------+---------+---------+
+| project |   2.15  |  1,941  |
++---------+---------+---------+

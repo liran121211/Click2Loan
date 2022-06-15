@@ -1,0 +1,49 @@
+pipeline {
+    agent {
+        docker {
+            image 'maven:3.8.5-openjdk-17-slim'
+            args '-v /root/.m2:/root/.m2'
+        }
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn -B -DskipTests clean package'
+            }
+        }
+        stage('Metrics - Lines of Code') {
+        steps {
+                sh 'cat ./src/main/java/core/bin/metrics/LOC.txt'
+            }
+        }
+        stage('Metrics - Complexity') {
+        steps {
+                sh 'cat ./src/main/java/core/bin/metrics/COMPLEXITY.txt'
+            }
+        }
+                stage('Metrics - Chidamber & Kemerer') {
+        steps {
+                sh 'cat ./src/main/java/core/bin/metrics/CHIDAMBER-KEMERER.txt'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'mvn test -e'
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh 'echo "skipped failures"'
+                }
+
+            }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
+            }
+        }
+        stage('Deliver') {
+            steps {
+                echo 'Does Not Yet Exist'
+            }
+        }
+    }
+}

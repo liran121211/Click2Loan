@@ -1,0 +1,21 @@
+# Created at 2022-05-03T14:21:32.698
+org.apache.maven.surefire.api.util.SurefireReflectionException: org.junit.platform.commons.util.PreconditionViolationException: Cannot create Launcher without at least one TestEngine; consider adding an engine implementation JAR to the classpath
+	at org.apache.maven.surefire.api.util.ReflectionUtils.instantiateOneArg(ReflectionUtils.java:127)
+	at org.apache.maven.surefire.booter.ForkedBooter.createProviderInCurrentClassloader(ForkedBooter.java:491)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: org.junit.platform.commons.util.PreconditionViolationException: Cannot create Launcher without at least one TestEngine; consider adding an engine implementation JAR to the classpath
+	at org.junit.platform.commons.util.Preconditions.condition(Preconditions.java:295)
+	at org.junit.platform.launcher.core.DefaultLauncher.<init>(DefaultLauncher.java:58)
+	at org.junit.platform.launcher.core.LauncherFactory.create(LauncherFactory.java:91)
+	at org.junit.platform.launcher.core.LauncherFactory.create(LauncherFactory.java:67)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.<init>(JUnitPlatformProvider.java:90)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.apache.maven.surefire.api.util.ReflectionUtils.instantiateOneArg(ReflectionUtils.java:123)
+	... 5 more
+
+
